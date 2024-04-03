@@ -33,7 +33,7 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="flex">
-            <div className="ml-6 flex items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
+            <div className="ml-6 items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
             {showAdditionalLink && (
                 <NavLink
                   to="/host"
@@ -58,8 +58,6 @@ const Navbar = () => {
            
                 </NavLink>
               ))}
-              
-             
             </div>
             <NavLink to="/register">
             <img

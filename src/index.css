@@ -27,6 +27,15 @@
   font-weight: 600;
   line-height: 22.92px;
 }
+.underlines{
+  text-decoration: dotted;
+  border-bottom: 2px solid #4d4d4d;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.92px;
+  margin: 0 15rem 0 0;
+}
 .no-underline:hover{
   border-bottom: 2px solid #4d4d4d;
   color: black;
@@ -244,6 +253,36 @@
   font-weight: 600;
 }
 
+/* HOST PAGE */
+/* DASHBOARD PAGE */
+.underlining{
+  font-size: 18px;
+  font-weight: 700;
+  color: #161616;
+  text-decoration: none;
+  border-bottom: 2px solid #4d4d4d;
+  margin-right: 0.7rem;
+}
+.underlines{
+  font-size: 18px;
+  font-weight: 700;
+  color: grey;
+  text-decoration: none;
+  border-bottom: 2px solid #4d4d4d;
+}
+.no-underlines{
+  font-size: 18px;
+  font-weight: 800;
+  color: grey;
+  text-decoration: none;
+}
+.no-underlining{
+  font-size: 18px;
+  font-weight: 800;
+  color: grey;
+  border-bottom: 2px solid #4d4d4d;
+  text-decoration: none;
+}
 
 /* RESPONSIVENESS */
 @media only screen and (min-width: 700px) {
