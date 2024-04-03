@@ -5,15 +5,15 @@ const Host = () => {
   const NavLinking = [
     {
       name: "Income",
-      path: "/Van",
+      path: "/Income",
     },
     {
       name: "Vans",
-      path: "/Van",
+      path: "/Vans",
     },
     {
       name: "Reviews",
-      path: "/Van",
+      path: "/Review",
     },
     // { name: "Service", path: "/About/Service" }
   ];

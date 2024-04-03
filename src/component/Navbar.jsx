@@ -19,8 +19,6 @@ const Navbar = () => {
         name: "Vans", 
         path: "/Van"
         },
-        
-        // { name: "Service", path: "/About/Service" }
     ]
   return (
     <>
