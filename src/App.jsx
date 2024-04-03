@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Reg from './pages/register'
 import Van from './pages/Van'
 import About from './pages/About'
+import Host from './pages/Host'
 import NotFound from './pages/NotFound'
 import { Routes, Route, Navigate } from "react-router-dom"
 
@@ -21,6 +22,7 @@ function App() {
       <Route path='/register' element={<Reg/>} />
       <Route path='/Van' element={<Van/>} />
       <Route path='/About' element={<About/>} />
+      <Route path='/Host' element={<Host/>} />
       <Route path='*' element={<NotFound/>} />  
     </Routes>
     <Footer/>

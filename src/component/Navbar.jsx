@@ -1,8 +1,14 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import user from '../assets/image/User circle.png'
 
 const Navbar = () => {
+  const [showAdditionalLink, setShowAdditionalLink] = useState(false);
+
+  const toggleAdditionalLink = () => {
+    setShowAdditionalLink(!showAdditionalLink);
+  };
     const NavLinks = [
         {
         name: "About", 
@@ -13,10 +19,7 @@ const Navbar = () => {
         name: "Vans", 
         path: "/Van"
         },
-        // {
-        // name: "Login", 
-        // path: "/register"
-        // },
+        
         // { name: "Service", path: "/About/Service" }
     ]
   return (
@@ -31,6 +34,15 @@ const Navbar = () => {
           </div>
           <div className="flex">
             <div className="ml-6 flex items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
+            {showAdditionalLink && (
+                <NavLink
+                  to="/host"
+                  className="no-underline"
+                  activeclassname="text-gray-300"
+                >
+                  Host
+                </NavLink>
+              )}
               {NavLinks.map((link) => (
                 <NavLink
                  className={({ isActive }) =>
@@ -38,7 +50,7 @@ const Navbar = () => {
       }
                   key={link.name}
                   to={link.path}
-                  activeClassName="text-gray-300"
+                  activeclassname="text-gray-300"
                 //   className="text-white hover:text-gray-300 px-3 py-2 rounded-md font-medium"
                 >
                 {link.name}
@@ -47,9 +59,15 @@ const Navbar = () => {
                 </NavLink>
               ))}
               
+             
             </div>
             <NavLink to="/register">
-               <img src={user} className='userCir' alt="Login" />
+            <img
+              src={user}
+              className="userCir cursor-pointer"
+              alt="Login"
+              onClick={toggleAdditionalLink}
+            />
             </NavLink>
           </div>
          
