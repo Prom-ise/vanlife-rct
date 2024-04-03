@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar{
+  background-color: #fff7ed;
+  padding: 10% 3.8%;
+}
+.vanlife{
+  color: black;
+  font-size: 25.35px;
+  text-transform: uppercase;
+ font-weight: 900;
+ text-decoration: none;
+}
+.underline{
+  text-decoration: dotted;
+  border-bottom: 2px solid #4d4d4d;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.92px;
+}
+.no-underline:hover{
+  border-bottom: 2px solid #4d4d4d;
+  color: black;
+}
+.no-underline{
+  color: #4d4d4d;
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.92px;
+}
+.userCir{
+  margin: -2px 0 3px 20px;
+  width: 2rem;
+  height: 1.99rem;
+}
+
+/* FOOTER */
+.footer{
+  margin-top: -1px;
+  box-sizing: border-box;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AAAAAA;
+  font-size: 25px;
+  padding: 2%;
+}
+
+/* HOMEPAGE */
+.image{
+  background-image: url('./assets/image/image\ 54.png');
+  background-size: cover;
+}
+.travel{
+  color: white;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.advent{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.butt1{
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #ff8c38;
+  border-radius: 9px;
+  padding: 25px 40px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/* ABOUT PAGE */
+.img1{
+  height: 50%;
+}
+.relax{
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 2.6rem;
+}
+.mission{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.team{
+  margin-top: 2rem;
+}
+.card1{
+  padding: 5% 10%;
+  background-color: #ffcc8d;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+.destination{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.butt2{
+  margin-top: 3rem;
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* VANS PAGE */
+.explore{
+  font-size: 4rem;
+}
+.butt3, .butt4, .butt5{
+  background-color: #FFEAD0;
+  border-radius: 5px;
+  height: 37px;
+  outline: none;
+ font-size: 1.2rem;
+ font-weight: 500;
+}
+.butt3:hover, .butt3:focus{
+  background-color: #e17654;
+  color: white;
+}
+.butt4:hover, .butt4:focus{
+  background-color: #161616;
+  color: white;
+}
+.butt5:hover, .butt5:focus{
+  background-color: #115e59;
+  color: white;
+}
+.filter{
+ text-decoration: underline;
+ font-size: 1.2rem;
+ font-weight: 600;
+}
+.filter:hover, .filter:focus{
+  font-weight: 700;
+  text-decoration: underline;
+  color: #4d4d4d;
+  text-decoration-color: #4d4d4d;
+}
+.centre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-title{
+  font-size: 2rem;
+}
+.butt3-1{
+  background-color: #e17654;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+ font-size: 1.2rem;
+ font-weight: 500;
+ padding: 10px 2.5rem;
+ margin-top: -5.5px;
+}
+.butt3-2{
+  background-color: #115e59;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+ font-size: 1.2rem;
+ font-weight: 500;
+ padding: 10px 2.5rem;
+ margin-top: -5.5px;
+}
+.butt3-3{
+  background-color: #161616;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+ font-size: 1.2rem;
+ font-weight: 500;
+ padding: 10px 2.5rem;
+ margin-top: -5.5px;
+}
+
+/* REGISTER PAGE */
+.input-email{
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 7px 7px 0 0;
+  height: 4rem;
+  box-sizing: border-box;
+  border-top: 2px solid #d1d5db;
+  padding-left: 1.7rem;
+  border-left: 2px solid #d1d5db;
+  border-right: 2px solid #d1d5db;
+  outline: none;
+  font-size: 1.5rem;
+}
+.input-password{
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 0 0 7px 7px;
+  height: 4rem;
+  box-sizing: border-box;
+  border: 2px solid #d1d5db;
+  padding-left: 1.7rem;
+  outline: none;
+  font-size: 1.5rem;
+}
+.input-password::placeholder, .input-email::placeholder{
+  color: #4d4d4d;
+  font-size: 1.7rem;
+}
+.account{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.create{
+  color: #ff8c38;
+  cursor: pointer;
+}
+
+/* NOTFOUND PAGE */
+.butt1-1{
+  background-color: black;
+  border-radius: 9px;
+  padding: 25px 40px;
+  width: 100%;
+  max-width: 1300px;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (min-width: 700px) {
+  .underline, .no-underline{
+   margin-left: -20px;
+   margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* *{
+    overflow: hidden;
+  } */
+  .underline, .no-underline {
+    font-size: 11px;
+  }
+  .vanlife{
+    font-size: 20px;
+  }
+  .travel, .relax, .destination{
+    font-size: 1.2rem;
+  }
+  .advent, .mission{
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .butt1{
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  .card-title{
+    font-size: 25px;
+  }
+  .footer{
+    margin-top: -1px;
+    box-sizing: border-box;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AAAAAA;
+    font-size: 15px;
+    padding: 1%;
+  }
+}
