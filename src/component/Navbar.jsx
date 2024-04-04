@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import user from '../assets/image/User circle.png'
+import user from "../assets/image/User circle.png";
 
 const Navbar = () => {
   const [showAdditionalLink, setShowAdditionalLink] = useState(false);
@@ -9,71 +9,68 @@ const Navbar = () => {
   const toggleAdditionalLink = () => {
     setShowAdditionalLink(!showAdditionalLink);
   };
-    const NavLinks = [
-        {
-        name: "About", 
-        path: "/About"
-        },
+  const NavLinks = [
+    {
+      name: "About",
+      path: "/About",
+    },
 
-        {
-        name: "Vans", 
-        path: "/Van"
-        },
-    ]
+    {
+      name: "Vans",
+      path: "/Van",
+    },
+  ];
   return (
     <>
-    <nav>
-      <div className="navbar max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 w-full">
-          <div className="flex items-center">
-            <NavLink to="/" className="vanlife">
-            #vanlife
-            </NavLink>
-          </div>
-          <div className="flex">
-            <div className="ml-6 items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
-            {showAdditionalLink && (
-                <NavLink
-                  to="/Dashboard"
-                  className="no-underline"
-                  activeclassname="text-gray-300"
-                >
-                  Host
-                </NavLink>
-              )}
-              {NavLinks.map((link) => (
-                <NavLink
-                 className={({ isActive }) =>
-        isActive ? "underline" : "no-underline"
-      }
-                  key={link.name}
-                  to={link.path}
-                  activeclassname="text-gray-300"
-                //   className="text-white hover:text-gray-300 px-3 py-2 rounded-md font-medium"
-                >
-                {link.name}
-            
-           
-                </NavLink>
-              ))}
+      <nav>
+        <div className="navbar max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 w-full">
+            <div className="flex items-center">
+              <NavLink to="/" className="vanlife">
+                #vanlife
+              </NavLink>
             </div>
-            <NavLink to="/register">
-            <img
-              src={user}
-              className="userCir cursor-pointer"
-              alt="Login"
-              onClick={toggleAdditionalLink}
-            />
-            </NavLink>
+            <div className="flex">
+              <div className="ml-6 items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
+                {showAdditionalLink && (
+                  <NavLink
+                    to="/Host/Dashboard"
+                    className={({ isActive }) =>
+                      isActive ? "underline" : "underline"
+                    }
+                    // activeclassname="text-gray-300"
+                  >
+                    Host
+                  </NavLink>
+                )}
+                {NavLinks.map((link) => (
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "underline" : "no-underline"
+                    }
+                    key={link.name}
+                    to={link.path}
+                    activeclassname="text-gray-300"
+                    //   className="text-white hover:text-gray-300 px-3 py-2 rounded-md font-medium"
+                  >
+                    {link.name}
+                  </NavLink>
+                ))}
+              </div>
+              <NavLink to="/register">
+                <img
+                  src={user}
+                  className="userCir cursor-pointer"
+                  alt="Login"
+                  onClick={toggleAdditionalLink}
+                />
+              </NavLink>
+            </div>
           </div>
-         
         </div>
-      </div>
-    </nav>
-
-       
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

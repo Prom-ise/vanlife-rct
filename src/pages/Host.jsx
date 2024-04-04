@@ -5,22 +5,21 @@ const Host = () => {
   const NavLinking = [
     {
       name: "Income",
-      path: "/Income",
+      path: "/Host/Income",
     },
     {
       name: "Vans",
-      path: "/Vans",
+      path: "/Host/Vans",
     },
     {
       name: "Reviews",
-      path: "/Review",
+      path: "/Host/Review",
     },
-    // { name: "Service", path: "/About/Service" }
   ];
   return (
     <div style={{ padding: "4% 10%", backgroundColor: "#fff7ed" }}>
     <div className="flex items-center">
-      <NavLink to="/Dashboard" className={({ isActive }) =>
+      <NavLink to="/Host/Dashboard" className={({ isActive }) =>
           isActive ? "underline" : "no-underline"
         }>
         Dashboard
