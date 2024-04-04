@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="ml-6 items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
             {showAdditionalLink && (
                 <NavLink
-                  to="/host"
+                  to="/Dashboard"
                   className="no-underline"
                   activeclassname="text-gray-300"
                 >

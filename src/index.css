@@ -255,34 +255,54 @@
 
 /* HOST PAGE */
 /* DASHBOARD PAGE */
-.underlining{
+.last-income{
   font-size: 18px;
+  font-weight: 500;
+  font-family: inter;
+  color: #4D4D4D;
+  display: flex;
+  justify-content: space-between;
+}
+.score-review{
+  font-size: 24px;
   font-weight: 700;
   color: #161616;
-  text-decoration: none;
-  border-bottom: 2px solid #4d4d4d;
-  margin-right: 0.7rem;
+  display: flex;
 }
-.underlines{
-  font-size: 18px;
+.vansList{
+  display: flex;
+  justify-content: space-between;
+}
+.listed-vans{
+  font-size: 24px;
   font-weight: 700;
-  color: grey;
-  text-decoration: none;
-  border-bottom: 2px solid #4d4d4d;
+  color: #161616;
 }
-.no-underlines{
-  font-size: 18px;
-  font-weight: 800;
-  color: grey;
-  text-decoration: none;
+.vans-list-container{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
 }
-.no-underlining{
-  font-size: 18px;
-  font-weight: 800;
-  color: grey;
-  border-bottom: 2px solid #4d4d4d;
-  text-decoration: none;
+.det{
+  margin-top: 8%;
 }
+.modern-van{
+  margin-top: 15%;
+  margin-left: 2%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.modern-van span{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* INCOME PAGE */
+
+
 
 /* RESPONSIVENESS */
 @media only screen and (min-width: 700px) {

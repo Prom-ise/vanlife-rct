@@ -18,32 +18,30 @@ const Host = () => {
     // { name: "Service", path: "/About/Service" }
   ];
   return (
-    <div style={{ padding: "5% 10%", backgroundColor: "#fff7ed" }}>
-        <div className="flex items-center">
-        <div className="flex items-center">
-            <NavLink to="/host" className={({ isActive }) =>
-            isActive ? "underlining" : "no-underlining"
-          }>
-            Dashboard
-            </NavLink>
-          </div>
-        <div className="ml-6 flex items-baseline lg:space-x-6 space-x-1 text-xs md:text-sm">
-      {NavLinking.map((link) => (
-        <NavLink
+    <div style={{ padding: "4% 10%", backgroundColor: "#fff7ed" }}>
+    <div className="flex items-center">
+      <NavLink to="/Dashboard" className={({ isActive }) =>
+          isActive ? "underline" : "no-underline"
+        }>
+        Dashboard
+      </NavLink>
+      <div className="ml-8 flex items-baseline lg:space-x-8 space-x-1 text-xs md:text-sm">
+        {NavLinking.map((link) => (
+          <NavLink
           className={({ isActive }) =>
-            isActive ? "underlines" : "no-underlines"
-          }
-          key={link.name}
-          to={link.path}
-          activeclassname="text-gray-300"
-          //   className="text-white hover:text-gray-300 px-3 py-2 rounded-md font-medium"
-        >
-          {link.name}
-        </NavLink>
-      ))}
-      </div>
+          isActive ? "underline" : "no-underline"
+        }
+            key={link.name}
+            to={link.path}
+            activeClassName="text-gray-300"
+          >
+            {link.name}
+          </NavLink>
+        ))}
       </div>
     </div>
+  </div>
+  
   );
 };
 
