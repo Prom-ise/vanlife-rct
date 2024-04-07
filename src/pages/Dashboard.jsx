@@ -85,10 +85,10 @@ const Dashboard = () => {
             <div className="vans-list-container mt-4 col-lg-12 col-md-12 col-12">
               <div className="d-flex">
                 <span>
-                  <img src={five} alt="Modern Explorer" />
+                  <img src={five} alt="Modest Explorer" />
                 </span>
                 <div className="modern-van">
-                  <span>Modern Explorer</span> 60$/day
+                  <span>Modest Explorer</span> 60$/day
                 </div>
               </div>
               <div

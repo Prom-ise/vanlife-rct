@@ -13,16 +13,16 @@ const Vans = () => {
         <h1 className="explore">Your Listed Vans</h1>
       <div className='vans-list-contain row'>
 
-      <NavLink to="/host/vans/modern" style={{textDecoration: "none", color: "black"}}>
+      <NavLink to="/host/vans/modest/details" style={{textDecoration: "none", color: "black"}}>
              <div className='vans-list-container mt-4 col-lg-12 col-md-12 col-12'>   
                 <div className='d-flex'>
-                    <span><img src={five} alt="Modern Explorer" /></span>
-                    <div className='modern-van'><span>Modern Explorer</span>  60$/day</div>
+                    <span><img src={five} alt="modest Explorer" /></span>
+                    <div className='modern-van'><span>Modest Explorer</span>  60$/day</div>
                 </div>    
             </div>
         </NavLink>
     
-            <NavLink to="/host/vans/beach" style={{textDecoration: "none", color: "black"}}>
+            <NavLink to="/host/vans/beach/details" style={{textDecoration: "none", color: "black"}}>
              <div className='vans-list-container my-5 col-lg-12 col-md-12 col-12'>
                 <div className='d-flex'>
                     <span><img src={three} alt="Modern Explorer" /></span>
@@ -31,7 +31,7 @@ const Vans = () => {
             </div>
             </NavLink>
 
-            <NavLink to="/host/vans/green" style={{textDecoration: "none", color: "black"}}>
+            <NavLink to="/host/vans/green/details" style={{textDecoration: "none", color: "black"}}>
              <div className='vans-list-container col-lg-12 col-md-12 col-12'>
                 <div className='d-flex'>
                     <span><img src={eight} alt="Modern Explorer" /></span>
