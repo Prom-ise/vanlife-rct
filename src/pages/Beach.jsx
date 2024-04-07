@@ -1,6 +1,6 @@
 import React from 'react'
 import Host from "./Host";
-import Details2 from "./Details2";
+import Details2 from "../Sub-pages/Details2";
 import { NavLink } from "react-router-dom";
 import three from '../assets/image/three.png';;
 

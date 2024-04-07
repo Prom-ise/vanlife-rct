@@ -1,6 +1,6 @@
 import React from 'react'
 import Host from "./Host";
-import Pricing1 from "./Pricing1";
+import Pricing1 from "../Sub-pages/Pricing1";
 import { NavLink } from "react-router-dom";
 import five from "../assets/image/Rectangle 154.png";
 
