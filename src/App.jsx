@@ -32,6 +32,15 @@ import Beach from './pages/Beach'
 import BeachP from './pages/BeachP'
 import BeachPh from './pages/BeachPh'
 import NotFound from './pages/NotFound'
+import ModestExplorer from './VanPages/ModestExplorer'
+import BeachBum from './VanPages/BeachBum'
+import GreenWonder from './VanPages/GreenWonder'
+import DreamFinder from './VanPages/DreamFinder'
+import ReliableRed from './VanPages/ReliableRed'
+import Cruiser from './VanPages/Cruiser'
+import Simple from './Explore-pages/Simple'
+import Rugged from './Explore-pages/Rugged'
+import Luxury from './Explore-pages/Luxury'
 import { Routes, Route, Navigate } from "react-router-dom"
 
 function App() {
@@ -72,6 +81,17 @@ function App() {
       <Route path='/Host/Vans/Green/Details' element={<Green/>} />
       <Route path='/Host/Vans/Green/Pricing' element={<GreenP/>} />
       <Route path='/Host/Vans/Green/Photos' element={<GreenPh/>} />
+
+      <Route path='/Van/Simple' element={<Simple/>} />
+      <Route path='/Van/Rugged' element={<Rugged/>} />
+      <Route path='/Van/Luxury' element={<Luxury/>} />
+
+      <Route path='/Van/Modest-Explorer' element={<ModestExplorer/>} />
+      <Route path='/Van/Beach-Bum' element={<BeachBum/>} />
+      <Route path='/Van/Reliable-Red' element={<ReliableRed/>} />
+      <Route path='/Van/Dreamfinder' element={<DreamFinder/>} />
+      <Route path='/Van/Cruiser' element={<Cruiser/>} />
+      <Route path='/Van/Green-Wonder' element={<GreenWonder/>} />
       <Route path='*' element={<NotFound/>} />  
     </Routes>
     <Footer/>

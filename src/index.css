@@ -20,7 +20,7 @@
  text-decoration: none;
 }
 .underline{
-  text-decoration: dotted;
+  text-decoration: none;
   border-bottom: 2px solid #4d4d4d;
   color: black;
   font-size: 18px;
@@ -28,7 +28,7 @@
   line-height: 22.92px;
 }
 .underlines{
-  text-decoration: dotted;
+  text-decoration: none;
   border-bottom: 2px solid #4d4d4d;
   color: black;
   font-size: 20px;
@@ -133,32 +133,58 @@
 .explore{
   font-size: 4rem;
 }
+/* .color{
+  background-color: #e17654;
+  color: white
+} */
+
 .butt3, .butt4, .butt5{
-  background-color: #FFEAD0;
+  background-color: #ffe5d0;
   border-radius: 5px;
-  height: 37px;
+  height: 39px;
+  width: 210px;
   outline: none;
- font-size: 1.2rem;
- font-weight: 500;
+  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
 }
-.butt3:hover, .butt3:focus{
+
+.butt3:hover{
   background-color: #e17654;
   color: white;
 }
-.butt4:hover, .butt4:focus{
+.butted3{
+  background-color: #e17654;
+  color: white;
+}
+.butt4:hover{
   background-color: #161616;
   color: white;
 }
-.butt5:hover, .butt5:focus{
+.butted4{
+  background-color: #161616;
+  color: white;
+}
+.butt5:hover{
   background-color: #115e59;
   color: white;
 }
+.butted5{
+  background-color: #115e59;
+}
 .filter{
+  color: black;
  text-decoration: underline;
  font-size: 1.2rem;
  font-weight: 600;
 }
-.filter:hover, .filter:focus{
+.fill{
+  color: #4d4d4d;
+  text-decoration-color: #4d4d4d;
+}
+.filter:hover{
   font-weight: 700;
   text-decoration: underline;
   color: #4d4d4d;
@@ -371,8 +397,8 @@
   .vanlife{
     font-size: 20px;
   }
-  .travel, .relax, .destination{
-    font-size: 1.2rem;
+  .travel, .relax, .destination, .explore{
+    font-size: 1.5rem;
   }
   .advent, .mission{
     font-size: 1rem;
