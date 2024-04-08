@@ -138,19 +138,36 @@
   color: white
 } */
 
-.butt3, .butt4, .butt5{
+/* .butt3, .butt4, .butt5{
   background-color: #ffe5d0;
+  background-color: transparent;
   border-radius: 5px;
   height: 39px;
   width: 210px;
   outline: none;
-  padding: 0.3rem 2rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
   text-decoration: none;
+} */
+.butt3, .butt4{
+  background-color: #ffe5d0;
+  color: black;
+  border-radius: 5px;
+  padding: 0.45rem 5.4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-
+.butt5{
+  background-color: #ffe5d0;
+  color: black;
+  border-radius: 5px;
+  padding: 0.45rem 5.1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 .butt3:hover{
   background-color: #e17654;
   color: white;
@@ -158,6 +175,12 @@
 .butted3{
   background-color: #e17654;
   color: white;
+  border-radius: 5px;
+  padding: 0.45rem 5.4rem;
+  width: 210px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .butt4:hover{
   background-color: #161616;
@@ -166,6 +189,12 @@
 .butted4{
   background-color: #161616;
   color: white;
+  border-radius: 5px;
+  padding: 0.45rem 5.4rem;
+  width: 210px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .butt5:hover{
   background-color: #115e59;
@@ -173,6 +202,13 @@
 }
 .butted5{
   background-color: #115e59;
+  color: white;
+  border-radius: 5px;
+  padding: 0.45rem 5.1rem;
+  width: 210px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .filter{
   color: black;
@@ -387,12 +423,12 @@
    margin-right: 15px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   /* *{
     overflow: hidden;
   } */
   .underline, .no-underline {
-    font-size: 11px;
+    font-size: 14px;
   }
   .vanlife{
     font-size: 20px;
@@ -409,7 +445,26 @@
     font-size: 1rem;
   }
   .card-title{
-    font-size: 25px;
+    font-size: 23px;
+  }
+  .modern-van span{
+    font-size: 20px;
+  }
+  .form{
+    margin-top: -15%;
+  }
+  .account{
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+  }
+  .butt1{
+    margin-bottom: -20%;
+  }
+  .input-password::placeholder{
+    font-size: 20px;
+  }
+  .input-email::placeholder{
+    font-size: 20px;
   }
   .footer{
     margin-top: -1px;
@@ -421,5 +476,18 @@
     color: #AAAAAA;
     font-size: 15px;
     padding: 1%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .underline, .no-underline {
+    font-size: 11px;
+    margin-right: -7px;
+  }
+  .input-email, .input-password{
+    height: 3rem;
+    width: 240px;
+  }
+  .butt1{
+    width: 240px;
   }
 }

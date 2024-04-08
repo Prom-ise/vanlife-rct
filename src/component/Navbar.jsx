@@ -31,7 +31,7 @@ const Navbar = () => {
               </NavLink>
             </div>
             <div className="flex">
-              <div className="ml-6 items-baseline lg:space-x-5 space-x-1 text-xs md:text-sm">
+              <div className="ml-6 items-baseline lg:space-x-5 space-x-3 text-lg md:text-sm">
                 {showAdditionalLink && (
                   <NavLink
                     to="/Host/Dashboard"
@@ -60,7 +60,7 @@ const Navbar = () => {
               <NavLink to="/register">
                 <img
                   src={user}
-                  className="userCir cursor-pointer"
+                  className="userCir cursor-pointer me-2"
                   alt="Login"
                   onClick={toggleAdditionalLink}
                 />

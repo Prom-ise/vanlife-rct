@@ -15,23 +15,23 @@ const Van = () => {
       
       <NavLink
               className={({ isActive }) =>
-                isActive ? "butted3" : "butte3"
-               } to="/Van/Simple"><button className='butt3 mt-2'>Simple</button></NavLink> 
+                isActive ? "butted3" : "butt3"
+               } to="/Van/Simple"><button className='mt-4'>Simple</button></NavLink> 
                     
                     <NavLink
                     className={({ isActive }) =>
-                      isActive ? "butted4" : "butte4"
-                    } to="/Van/Rugged"><button className='butt4 mt-2'>Luxury</button></NavLink>
+                      isActive ? "butted4" : "butt4"
+                    } to="/Van/Luxury"><button className='mt-4'>Luxury</button></NavLink>
                     
                     <NavLink
                     className={({ isActive }) =>
-                      isActive ? "butted5" : "butte5"
-                    } to="/Van/Rugged"><button className='butt5 mt-2'> Rugged</button></NavLink>
+                      isActive ? "butted5" : "butt5"
+                    } to="/Van/Rugged"><button className='mt-4'>Rugged</button></NavLink>
           <NavLink
                     className={({ isActive }) =>
                       isActive ? "fill" : "filter"
                     } to="/Van">         
-        <button className='filter ml-8 mt-2'>Clear filters</button></NavLink> 
+        <button className='filter ml-8 mt-4'>Clear filters</button></NavLink> 
       </div>
       <div className="centre">
       <div className='row gy-5 my-5'>
